@@ -4,7 +4,7 @@ import pyfiglet
 from colorama import Fore, Style
 from botter import Botter
 import json
-# author shahzain, github.com/shahzain345
+
 with open('config.json') as fp:
     config = json.load(fp)
 def genToken(inv):
@@ -14,7 +14,7 @@ def genToken(inv):
 os.system('cls')
 os.system('title Discord-Botter')
 print(pyfiglet.figlet_format("Discord Botter"))
-print(f'{Style.BRIGHT}By Shahzain')
+print(f'{Style.BRIGHT}By poco')
 with open("proxies.txt") as fp:
     proxs = fp.read().splitlines()
 if len(proxs) == 0:
